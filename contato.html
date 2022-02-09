@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contato</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="img/06 - Restaurante-transparente.png" alt="logo restaurante mineiro"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main-contato">
+            <form action="">
+                <label for="nomesobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@email.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                <fieldset>
+                    <legend>Como gostaria de receber nosso cotato?</legend>
+                    <label for="radio-email">
+                        <input type="radio" id="radio-email" name="contato" value="E-mail">
+                        E-mail
+                    </label>
+                    
+                    <label for="radio-telefone">
+                        <input type="radio" id="radio-telefone" name="contato" value="Telefone">
+                        Telefone                    
+                    </label>
+                    
+                    <label for="radio-whats">
+                        <input type="radio" id="radio-whats" name="contato" value="WhatsApp">
+                        WhatsApp
+
+                    </label>                    
+                </fieldset>
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option value="Manhã">Manhã</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noite">Noite</option>
+
+                    </select>
+                </fieldset>
+                <label class="texto-email"><input type="checkbox">Gostaria de receber nossas novidades por e-mail?</label>
+
+                <input type="submit" value="Enviar Formulário" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda à Sexta</td>
+                        <td>12h ~ 17h</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>12h ~ 23h</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>12h ~ 15h</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Atendimento todos os dias</td>
+                    </tr>
+                </tfoot>
+            
+            </table>
+        </main>
+        <footer>
+            <img src="img/06 - Restaurante-transparente.png" alt="Logo do Restaurante">
+            <p>&copy;Copywrite Restaurante Mineiro - Todos direitos reservados</p>
+        </footer>
+    </body>
+</html>
